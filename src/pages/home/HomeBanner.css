@@ -1,0 +1,67 @@
+.card_button{
+  margin-bottom: 70px;
+}
+.outer {
+  position: relative;
+  margin: 30px 0px;
+  background: linear-gradient(#a789e9, #5AE4A8, #F5931D);
+}
+.button {
+  height: 70px;
+  width: 162px;
+  border-radius: 50px;
+}
+.outer a {
+  line-height: 40px;
+}
+.outer a:hover {
+ color: #5AE4A8;
+}
+.outer a,
+.outer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer a {
+  background: #004f70;
+  color: bisque;
+  outline: none;
+  border: none;
+  
+
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 9;
+}
+.button a {
+  height: 50px;
+  width: 142px;
+  border-radius: 50px;
+}
+.outer span {
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.button span {
+  border-radius: 50px;
+}
+.outer span:nth-child(1) {
+  filter: blur(7px);
+}
+.outer span:nth-child(2) {
+  filter: blur(14px);
+}
+.outer {
+  animation: rotate 1.4s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
